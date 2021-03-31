@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #eee;
+            margin:20px 0;
+        }
+        article{
+            width: 21cm;
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+    <style media="print">
+        body{
+            margin: 0;
+        }
+        .page2{
+            page-break-before:always;
+            margin-top: 30px;
+        }
+    </style>
+    <style>
+        article{
+            padding-top:30px;
+        }
+        p{
+            margin: .4em 0;
+        }
+        h1{
+            font-size: 32px;
+            margin-top: 0;
+        }
+        h3,h4,h5.h6{
+            margin:0;
+        }
+        h4,h5,h6{
+            font-weight: normal;
+        }
+        a{
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+        p,li{
+            color: #666;
+        }
+        ol,ul{
+            list-style: none;
+        }
+        .bio{
+            position: relative;
+        }
+        .bio img{
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+    </style>
+    <style>
+                a {
+                    text-decoration: none;
+                    color: blue;
+                }
+            
+                .projects p {
+                    color: #666;
+                }
+            
+                .projects>ol {
+                    list-style-position: inside;
+                    padding: 0;
+                }
+            
+                .projects>ol>li {
+                    margin-bottom: 24px;
+                }
+            
+                .projects>ol>li>header {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            
+                .projects>ol>li h3 {
+                    display: inline-block;
+                }
+    </style>
+    <style>
+            .skills>.wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .skills>.wrapper>#skills {
+                width: 500px;
+                height: 270px;
+            }
+        
+            .skills>.wrapper>:first-child {
+                margin-right: 24px;
+            }
+        
+            .skills>.wrapper>ul {
+                color: #666;
+            }
+        
+            .skills>.wrapper>ul>li {
+                line-height: 1.2;
+                margin-bottom: 8px;
+            }
+        
+            .skills>.wrapper>ul>li>strong {
+                color: #f60;
+            }
+    </style>
+    <style>
+            @media(max-width: 500px) {
+                body {
+                    margin: 0;
+                }
+        
+                article {
+                    width: auto;
+                    height: auto;
+                }
+        
+                .bio img {
+                    display: none;
+                }
+        
+                #skills {
+                    width: 100px;
+                    border: 1px solid red;
+                }
+        
+                .skills .wrapper {
+                    flex-direction: column;
+                }
+            }
+    </style>
+</head>
+<body>
+    <article>
+        <section class="bio">
+            <h1>徐玲</h1>
+            <img src="./images/1.jpg" width="105">
+            <p>
+                女  |  22岁  |   前端开发工程师   |   上海
+            </p>
+            <p>
+                手机：15707061145  |  微信：xl15707061145  |  邮箱：2801845775@qq.com
+            </p>
+        </section>
+        <section class="education">
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2017</time>~<time>2021</time></span>
+                江西理工大学 商学院 软件工程 本科
+            </p>
+            <h3>主修课程</h3>
+            <p>C、C++、数据结构、java、 数据库、软件工程、jsp,、统一建模语言、计算机网络、计算机组成原理、操作系统</p>
+        </section>
+        <section class="skills">
+            <h2>技能</h2>
+            <div class="wrapper">
+                <div id="skills"></div>
+                <ul>
+                    <li>熟悉html,css,scss静态页面制作</li>
+                    <li>熟悉<strong>前后端分离</strong>,包括<strong>AJAX</strong>、<strong>跨域</strong>，<strong>前端路由</strong>等</li>
+                    <li>熟悉Vue全家桶,包括<strong>VueCli</strong>、<strong>VueRouter</strong>等</li>
+                    <li>熟悉<strong>JavaScript</strong>、TypeScript的使用</li>
+                    <li>熟悉git命令，有自己的git hub账号，提交了14个开源项目代码</li>
+                    <li>获得CET-4证书</li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <h2>项目经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>Cnode社区</h3>
+                        <span>
+                            <a href="https://github.com/moye-dev/Cnode/tree/main/src">点我看源码链接</a>
+                            <a href="">点我预览</a>
+                        </span>
+                    </header>
+                    <p>这是一个完全由Vue框架搭建的网页，引入了VueCli脚手架工具进行搭建，其中用到了VueRouter用于实现组件之间的跳转，从外部引入了jquery用于实现DOM操作。</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>旺财记账</h3>
+                        <span>
+                            <a href="">点我看源码链接</a>
+                            <a href="">点我预览</a>
+                        </span>
+                    </header>
+                    <p>描述</p>
+                </li> 
+                <li>
+                    <header>
+                        <h3>Canvas</h3>
+                        <span>
+                            <a href="https://github.com/moye-dev/canvas-demo/tree/main/src">点我看源码链接</a>
+                            <a href="https://moye-dev.github.io/canvas-demo/dist/">效果预览</a>
+                        </span>
+                    </header>
+                    <p>可在PC端和手机端进行绘制图形。</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>皮卡丘</h3>
+                        <span>
+                            <a href="">点我看源码链接</a>
+                            <a href="">点我预览</a>
+                        </span>
+                    </header>
+                    <p>一个基于HTML和css的卡通人物，并通过css样式给人物增加动画</p>
+                </li>
+                <li class="page2">
+                    <header>
+                        <h3>我的前航站点</h3>
+                        <span>
+                            <a href="https://github.com/moye-dev/nav-1/tree/main/src">点我看源码链接</a>
+                            <a href="https://moye-dev.github.io/nav-1/dist/index.html">点我预览</a>
+                        </span>
+                    </header>
+                    <p>制作了一个自己的导航站点，用户可以自己添加喜欢的网站也可以删除网站</p>
+                </li>
+            </ol>
+        </section>
+    </article>
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.2/echarts.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
