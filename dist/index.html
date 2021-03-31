@@ -26,6 +26,9 @@
         .page2{
             page-break-before:always;
             margin-top: 30px;
+        }
+        #skills{
+            display: none;
         }</style>
     <style>article{
             padding-top:30px;
@@ -51,6 +54,9 @@
         p,li{
             color: #666;
         }
+        strong{
+            color: #f60;
+        }
         ol,ul{
             list-style: none;
         }
@@ -64,7 +70,6 @@
         }</style>
     <style>a {
                     text-decoration: none;
-                    color: blue;
                 }
             
                 .projects p {
@@ -129,7 +134,7 @@
                 }
         
                 #skills {
-                    width: 100px;
+                    max-width: 100%;
                     border: 1px solid red;
                 }
         
@@ -147,7 +152,7 @@
                 女  |  22岁  |   前端开发工程师   |   上海
             </p>
             <p>
-                手机：15707061145  |  微信：xl15707061145  |  邮箱：2801845775@qq.com
+                手机：<a href="tel:15707061145">15707061145</a>  |  微信：xl15707061145  |  邮箱：<a href="mailto:2801845775@qq.com">2801845775@qq.com</a>
             </p>
         </section>
         <section class="education">
@@ -184,7 +189,7 @@
                             <a href="">点我预览</a>
                         </span>
                     </header>
-                    <p>这是一个完全由Vue框架搭建的网页，引入了VueCli脚手架工具进行搭建，其中用到了VueRouter用于实现组件之间的跳转，从外部引入了jquery用于实现DOM操作。</p>
+                    <p>这是一个完全由Vue框架搭建的网页，引入了<strong>VueCli</strong>脚手架工具进行搭建，其中用到了<strong>VueRouter</strong>用于实现组件之间的跳转，从外部引入了<strong>jquery</strong>用于实现DOM操作。</p>
                 </li>
                 <li>
                     <header>
@@ -224,7 +229,7 @@
                             <a href="https://moye-dev.github.io/nav-1/dist/index.html">点我预览</a>
                         </span>
                     </header>
-                    <p>制作了一个自己的导航站点，用户可以自己添加喜欢的网站也可以删除网站</p>
+                    <p>制作了一个自己的导航站点，用户可以自己添加喜欢的网站也可以删除网站,用到了<strong>localStorage</strong>储存数据</p>
                 </li>
             </ol>
         </section>
